@@ -22,7 +22,7 @@ module MpkKrakowRb
         doc = Nokogiri::HTML(open(Url))
         doc.xpath("//li").each do |stop|
           parsed = stop.to_s.match(/<li><a href=\"p\/p(?<id>\d*).htm\">(?<name>.*)<\/a><\/li>/i)
-          @stops << { id: parsed["id"], name: parsed["name"] }
+          @stops << Stop.new(id: parsed["id"], name: parsed["name"].encode("UTF-8"))
         end
       end
   end
