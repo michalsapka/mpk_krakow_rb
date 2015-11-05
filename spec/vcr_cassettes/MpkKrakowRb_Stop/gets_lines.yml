@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://rozklady.mpk.krakow.pl/aktualne/p/p0782.htm
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - rozklady.mpk.krakow.pl
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '1351'
+      Content-Type:
+      - text/html
+      Last-Modified:
+      - Mon, 02 Nov 2015 10:36:00 GMT
+      Accept-Ranges:
+      - bytes
+      Etag:
+      - '"028d9435a15d11:250c"'
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Thu, 05 Nov 2015 21:52:35 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMiI/Pjwh
+        RE9DVFlQRSBodG1sIFBVQkxJQyAiLS8vVzNDLy9EVEQgWEhUTUwgMS4wIFRy
+        YW5zaXRpb25hbC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi94aHRtbDEv
+        RFREL3hodG1sMS10cmFuc2l0aW9uYWwuZHRkIj48aHRtbCB4bWxucz0iaHR0
+        cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+PGhlYWQ+PHRpdGxlPjwvdGl0
+        bGU+PG1ldGEgaHR0cC1lcXVpdj0iQ2FjaGUtQ29udHJvbCIgY29udGVudD0i
+        bm8tY2FjaGUiLz48bWV0YSBodHRwLWVxdWl2PSJFeHBpcmVzIiBjb250ZW50
+        PSJub3ciLz48bWV0YSBodHRwLWVxdWl2PSJDb250ZW50LVR5cGUiIGNvbnRl
+        bnQ9InRleHQvaHRtbDsgY2hhcnNldD1pc28tODg1OS0yIi8+PC9oZWFkPjxi
+        b2R5Pjxici8+PHRhYmxlIHdpZHRoPSI1MCUiIGNlbGxzcGFjaW5nPSIwIiBj
+        ZWxscGFkZGluZz0iMCIgYWxpZ249ImNlbnRlciI+PHRyIGJnY29sb3I9IiMz
+        RjdGRkYiPjx0ZCBhbGlnbj0iY2VudGVyIj48Zm9udCBzaXplPSI1IiBjb2xv
+        cj0iI0ZGRkZGRiI+PGI+QWdhdG93YTwvYj48L2ZvbnQ+PC90ZD48L3RyPjx0
+        ciBiZ2NvbG9yPSIjRUZGN0ZGIj48dGQ+PHVsPjxsaT48YSBocmVmPSIuLi8w
+        MTI1LzAxMjVyMDM1Lmh0bSI+MTI1IC0gPiBTenBpdGFsIFJ5ZHlnaWVyYTwv
+        YT48L2xpPjxsaT48YSBocmVmPSIuLi8wMTI1LzAxMjVyMDMzLmh0bSI+MTI1
+        IC0gPiBas29jaWXxPC9hPjwvbGk+PGxpPjxhIGhyZWY9Ii4uLzAxNjMvMDE2
+        M3IwMTAuaHRtIj4xNjMgLSA+IEFsZWphIFByenlqYbxuaTwvYT48L2xpPjxs
+        aT48YSBocmVmPSIuLi8wMTYzLzAxNjNyMDEyLmh0bSI+MTYzIC0gPiBBbGVq
+        YSBQcnp5amG8bmk8L2E+PC9saT48bGk+PGEgaHJlZj0iLi4vMDE2My8wMTYz
+        cjAzNi5odG0iPjE2MyAtID4gUr+xa2EgPC9hPjwvbGk+PGxpPjxhIGhyZWY9
+        Ii4uLzAxNjMvMDE2M3IwMzguaHRtIj4xNjMgLSA+IFK/sWthIDwvYT48L2xp
+        PjxsaT48YSBocmVmPSIuLi8wMTgzLzAxODNyMDAyLmh0bSI+MTgzIC0gPiBE
+        b20gU3Bva29qbmVqIFN0YXJvtmNpPC9hPjwvbGk+PGxpPjxhIGhyZWY9Ii4u
+        LzAxODMvMDE4M3IwMjAuaHRtIj4xODMgLSA+IFqzb2NpZfE8L2E+PC9saT48
+        bGk+PGEgaHJlZj0iLi4vMDY0My8wNjQzcjAxNi5odG0iPjY0MyAtID4gUG93
+        c3Rh8WPzdyBXaWVsa29wb2xza2ljaDwvYT48L2xpPjxsaT48YSBocmVmPSIu
+        Li8wNjQzLzA2NDNyMDE0Lmh0bSI+NjQzIC0gPiBas29jaWXxPC9hPjwvbGk+
+        PGxpPjxhIGhyZWY9Ii4uL3ByenlzdGFuLmh0bSI+SW5uZSBwcnp5c3Rhbmtp
+        PC9hPjwvbGk+PC91bD48L3RkPjwvdHI+PC90YWJsZT48L2JvZHk+PC9odG1s
+        Pg==
+    http_version: 
+  recorded_at: Thu, 05 Nov 2015 21:52:44 GMT
+recorded_with: VCR 3.0.0
