@@ -5,5 +5,6 @@ describe MpkKrakowRb::Stop do
 
   it 'gets lines' do
     expect(stop.lines.count).not_to eq(0) 
+      @lines = []
   end
 end
