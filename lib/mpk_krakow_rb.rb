@@ -3,7 +3,6 @@
 require 'ostruct'
 require 'open-uri'
 require 'net/http'
-require 'nokogiri'
 require 'mpk_krakow_rb/version'
 require 'mpk_krakow_rb/stops.rb'
 require 'mpk_krakow_rb/stop.rb'
