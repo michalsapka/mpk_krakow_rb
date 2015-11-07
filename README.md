@@ -1,5 +1,13 @@
 # MpkKrakowRb
+[![Build Status](https://travis-ci.org/michalsapka/mpk_krakow_rb.svg)](https://travis-ci.org/michalsapka/mpk_krakow_rb)
 
+## Ruby versions
+This gem is tested against:
+
+  - 2.2.0
+  - ruby-head
+  - jruby-head
+ 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mpk_krakow_rb`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
