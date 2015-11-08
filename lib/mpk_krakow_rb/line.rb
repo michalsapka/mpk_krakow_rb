@@ -12,7 +12,7 @@ module MpkKrakowRb
     end
 
     def inspect
-      "#<MpkKrakowRb::Stop:#{object_id} #{@number}>"
+      "#<MpkKrakowRb::Line:#{object_id} #{@number}>"
     end
   end
 end
