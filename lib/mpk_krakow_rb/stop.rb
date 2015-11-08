@@ -1,9 +1,10 @@
 module MpkKrakowRb
   class Stop
-    def initialize(id:, name:)
+    def initialize(id:, name:, lines_list:)
       @id = id
       @name =name
       @fetcher = Fetchers::LinesOnStop.new("http://rozklady.mpk.krakow.pl/aktualne/p/p#{id}.htm")
+      @lines_list = lines_list
     end
 
     def lines
@@ -14,7 +15,7 @@ module MpkKrakowRb
 
     def get_lines
       @fetcher.fetch.each do |line|
-        (@lines ||= []) << line
+        (@lines ||= []) << @lines_list.get(line)
       end
       @lines
     end

@@ -1,9 +1,10 @@
 module MpkKrakowRb
   class Stops
     include Enumerable
-    def initialize
+    def initialize(lines_list:)
       @fetcher = Fetchers::Stops.new
       @stops = []
+      @lines_list = lines_list
       get_stops
     end
 
@@ -19,7 +20,7 @@ module MpkKrakowRb
 
     def get_stops
       @fetcher.fetch.each do |stop|
-        @stops << Stop.new(id: stop[:id], name: stop[:name])
+        @stops << Stop.new(id: stop[:id], name: stop[:name], lines_list: @lines_list)
       end
     end
   end

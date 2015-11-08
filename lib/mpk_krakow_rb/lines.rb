@@ -8,6 +8,10 @@ module MpkKrakowRb
       get_lines
     end
 
+    def get(line_number)
+      @lines.detect{ |line| line.number == line_number } or "Line not found"
+    end
+
     def each
       return to_enum(__callee__) unless block_given?
       0.step.each do |index|
@@ -24,7 +28,7 @@ module MpkKrakowRb
        data.scan(@type_parser).each do |type|
         line_type = line_type(type[0])
         type[1].scan(/(\d*)rw/).each do |line|
-           @lines << { type: line_type, number: line.first.to_i }
+           @lines << Line.new(type: line_type, number: line.first.to_i)
         end
       end
     end
