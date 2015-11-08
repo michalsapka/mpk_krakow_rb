@@ -8,6 +8,10 @@ module MpkKrakowRb
       get_stops
     end
 
+    def inspect
+      "#<MpkKrakowRb::Stops:#{object_id}"
+    end
+
     def each
       return to_enum(__callee__) unless block_given?
       0.step.each do |index|

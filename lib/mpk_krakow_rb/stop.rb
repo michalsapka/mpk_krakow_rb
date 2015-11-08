@@ -1,5 +1,7 @@
 module MpkKrakowRb
   class Stop
+    attr_reader :name
+
     def initialize(id:, name:, lines_list:)
       @id = id
       @name =name
@@ -9,6 +11,14 @@ module MpkKrakowRb
 
     def lines
       @lines || get_lines
+    end
+
+    def to_s
+      "Stop: #{name}"
+    end
+
+    def inspect
+      "#<MpkKrakowRb::Stop:#{object_id} #{@name}>"
     end
 
     private

@@ -20,6 +20,9 @@ module MpkKrakowRb
       end
     end
 
+    def inspect
+      "#<MpkKrakowRb::Lines:#{object_id}>"
+    end
     private
 
     def get_lines
