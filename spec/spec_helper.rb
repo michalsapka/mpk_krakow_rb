@@ -4,12 +4,15 @@ require 'vcr'
 
 # Configuration data
 NUMBER_OF_STOPS = 1375
+NUMBER_OF_LINES = 185
 
+# VCR configuration
 VCR.configure do |config|
   config.cassette_library_dir = "spec/vcr_cassettes"
   config.hook_into :webmock
 end
 
+# RSpec configuration
 RSpec.configure do |config|
   # Add VCR to all tests
   config.around(:each) do |example|

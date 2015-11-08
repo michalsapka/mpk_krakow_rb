@@ -1,21 +1,21 @@
 require "spec_helper"
 
-describe MpkKrakowRb::Fetchers::Stops do
-  let(:stops) { MpkKrakowRb::Fetchers::Stops.new.fetch }
+describe MpkKrakowRb::Fetchers::Lines do
+  let(:lines) { MpkKrakowRb::Fetchers::Lines.new.fetch }
 
   it "returns an Array" do
-    expect(stops.class).to eq(Array)
+    expect(lines.class).to eq(Array)
   end
 
   it "returns all elements" do
-    expect(stops.count).to eq(NUMBER_OF_STOPS)
+    expect(lines.count).to eq(NUMBER_OF_LINES)
   end
 
   it "returns Array of Hashes" do
-    expect(stops.all?{ |i| i.is_a? Hash }).to eq(true)
+    expect(lines.all?{ |i| i.is_a? Hash }).to eq(true)
   end
 
   it "returns correct Hashes" do
-    expect(stops.first.keys).to eq([:id, :name])
+    expect(lines.first.keys).to eq([:type, :number])
   end
 end
