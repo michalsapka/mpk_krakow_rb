@@ -8,7 +8,7 @@ describe MpkKrakowRb::Fetchers::Stops do
   end
 
   it "returns all elements" do
-    expect(stops.count).to eq(1375)
+    expect(stops.count).to eq(NUMBER_OF_STOPS)
   end
 
   it "returns Array of Hashes" do

@@ -2,6 +2,9 @@ $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'mpk_krakow_rb'
 require 'vcr'
 
+# Configuration data
+NUMBER_OF_STOPS = 1375
+
 VCR.configure do |config|
   config.cassette_library_dir = "spec/vcr_cassettes"
   config.hook_into :webmock
