@@ -2,7 +2,8 @@ module MpkKrakowRb
   class Line
     attr_reader :number, :type
 
-    def initialize(type:, number:)
+    def initialize(type:, number:, stops_list:)
+      @stops_list = stops_list
       @type = type
       @number = number
       @fetcher_one = MpkKrakowRb::Fetchers::StopsForLine.new(@number, 1)
@@ -28,12 +29,12 @@ module MpkKrakowRb
       index = 0
       @fetcher_one.fetch.each do |stop|
         index += 1
-        stops << {stop: stop, index: index}
+        stops << {stop: @stops_list.get(stop), index: index}
       end
 
       @fetcher_two.fetch.each do |stop|
          index += 1
-        stops << {stop: stop, index: index}
+         stops << {stop: @stops_list.get(stop), index: index}
       end
       stops
     end

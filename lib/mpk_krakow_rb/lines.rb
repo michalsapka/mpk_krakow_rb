@@ -1,9 +1,11 @@
 module MpkKrakowRb
   class Lines
     include Enumerable
-    def initialize
+    attr_accessor :stops_list
+    def initialize(stops_list: nil)
       @lines = []
       @fetcher = MpkKrakowRb::Fetchers::Lines.new
+      @stops_list = stops_list
       get_lines
     end
 
@@ -28,7 +30,9 @@ module MpkKrakowRb
     def get_lines
       data = @fetcher.fetch
       data.each do |line|
-        @lines << Line.new(type: line[:type], number: line[:number])
+        @lines << Line.new(type: line[:type],
+                           number: line[:number],
+                           stops_list: @stops_list)
       end
     end
   end

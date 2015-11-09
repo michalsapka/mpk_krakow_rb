@@ -26,7 +26,7 @@ module MpkKrakowRb
       end
 
       def find_lines(string)
-string.scan(@line_parser)
+        string.scan(@line_parser)
       end
 
       def line_type(polish_string)

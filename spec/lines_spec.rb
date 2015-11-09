@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 describe MpkKrakowRb::Lines do
-  let(:lines) { MpkKrakowRb::Lines.new }
+  let(:stops) { double("stop", get: true) }
+  let(:lines) { MpkKrakowRb::Lines.new(stops_list: stops) }
 
   it "returns elements" do
     expect(lines.count).not_to eq(0)
