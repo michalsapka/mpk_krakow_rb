@@ -4,7 +4,7 @@ require 'vcr'
 
 # Configuration data
 NUMBER_OF_STOPS = 1375
-NUMBER_OF_LINES = 185
+NUMBER_OF_LINES = 184
 
 # VCR configuration
 VCR.configure do |config|

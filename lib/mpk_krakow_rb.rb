@@ -11,6 +11,8 @@ require 'mpk_krakow_rb/fetchers/stops'
 require 'mpk_krakow_rb/lines'
 require 'mpk_krakow_rb/line'
 require 'mpk_krakow_rb/fetchers/lines'
+require 'mpk_krakow_rb/fetchers/stops_for_line'
+
 
 module MpkKrakowRb
   # Your code goes here...

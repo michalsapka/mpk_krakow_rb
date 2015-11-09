@@ -1,7 +1,10 @@
 module MpkKrakowRb
   class Stops
     include Enumerable
-    def initialize(lines_list:)
+
+    attr_accessor :lines_list
+
+    def initialize(lines_list:nil)
       @fetcher = Fetchers::Stops.new
       @stops = []
       @lines_list = lines_list
