@@ -20,4 +20,10 @@ describe MpkKrakowRb do
       expect(mpk.lines.first.stops).not_to eq(0)
     end
   end
+
+  context "Stops" do
+    it "stops have lines" do
+      expect(mpk.stops.first.lines).not_to eq(0)
+    end
+  end
 end
