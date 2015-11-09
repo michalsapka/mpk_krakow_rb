@@ -1,0 +1,120 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://rozklady.mpk.krakow.pl/aktualne/0020/0020w001.htm
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - rozklady.mpk.krakow.pl
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '3417'
+      Content-Type:
+      - text/html
+      Last-Modified:
+      - Thu, 05 Nov 2015 13:48:32 GMT
+      Accept-Ranges:
+      - bytes
+      Etag:
+      - '"0b89da8d017d11:250c"'
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Mon, 09 Nov 2015 21:22:33 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMiI/Pjwh
+        RE9DVFlQRSBodG1sIFBVQkxJQyAiLS8vVzNDLy9EVEQgWEhUTUwgMS4wIFRy
+        YW5zaXRpb25hbC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi94aHRtbDEv
+        RFREL3hodG1sMS10cmFuc2l0aW9uYWwuZHRkIj48aHRtbCB4bWxucz0iaHR0
+        cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+PGhlYWQ+PHRpdGxlPjwvdGl0
+        bGU+PG1ldGEgaHR0cC1lcXVpdj0iQ2FjaGUtQ29udHJvbCIgY29udGVudD0i
+        bm8tY2FjaGUiLz48bWV0YSBodHRwLWVxdWl2PSJFeHBpcmVzIiBjb250ZW50
+        PSJub3ciLz48bWV0YSBodHRwLWVxdWl2PSJDb250ZW50LVR5cGUiIGNvbnRl
+        bnQ9InRleHQvaHRtbDsgY2hhcnNldD1pc28tODg1OS0yIi8+PGxpbmsgcmVs
+        PSJzdHlsZXNoZWV0IiB0eXBlPSJ0ZXh0L2NzcyIgaHJlZj0iYnVzaW50LmNz
+        cyI+PC9oZWFkPjxib2R5Pjx0YWJsZSBjbGFzcz0idGFibGV0aW1pbmciIHdp
+        ZHRoPSI5NSUiIGJvcmRlcj0iMCIgY2VsbHNwYWNpbmc9IjAiIGNlbGxwYWRk
+        aW5nPSIwIj48dHI+PHRkIGNsYXNzPSJjZWxsbGluZSI+PGZvbnQgY2xhc3M9
+        ImZvbnRsaW5lIiBzaXplPSI3IiBjb2xvcj0iI0ZGRkZGRiI+PGI+MjA8L2I+
+        PC9mb250PjwvdGQ+PC90cj48dHI+PHRkIGNsYXNzPSJjZWxscm91dGUiPjx1
+        bD48bGk+PGEgbmFtZT0iMDAxIj48L2E+PGEgaHJlZj0iMDAyMHQwMDEuaHRt
+        IiB0YXJnZXQ9IlIiPjxiPk1hs3kgULNhc3rzdzwvYj48L2E+IDxhIGhyZWY9
+        Ii4uL3AvcDA3MTEuaHRtIiB0YXJnZXQ9Il9wYXJlbnQiPio8L2E+PC9saT48
+        bGk+PGEgbmFtZT0iMDAyIj48L2E+PGEgaHJlZj0iMDAyMHQwMDIuaHRtIiB0
+        YXJnZXQ9IlIiPlJ6ZWJpa2E8L2E+IDxhIGhyZWY9Ii4uL3AvcDA2NzguaHRt
+        IiB0YXJnZXQ9Il9wYXJlbnQiPio8L2E+PC9saT48bGk+PGEgbmFtZT0iMDAz
+        Ij48L2E+PGEgaHJlZj0iMDAyMHQwMDMuaHRtIiB0YXJnZXQ9IlIiPkxpcHNr
+        YTwvYT4gPGEgaHJlZj0iLi4vcC9wMDY3NC5odG0iIHRhcmdldD0iX3BhcmVu
+        dCI+KjwvYT48L2xpPjxsaT48YSBuYW1lPSIwMDQiPjwvYT48YSBocmVmPSIw
+        MDIwdDAwNC5odG0iIHRhcmdldD0iUiI+R3JvbWFkemthPC9hPiA8YSBocmVm
+        PSIuLi9wL3AwNjcxLmh0bSIgdGFyZ2V0PSJfcGFyZW50Ij4qPC9hPjwvbGk+
+        PGxpPjxhIG5hbWU9IjAwNSI+PC9hPjxhIGhyZWY9IjAwMjB0MDA1Lmh0bSIg
+        dGFyZ2V0PSJSIj5LdWtsafFza2llZ288L2E+IDxhIGhyZWY9Ii4uL3AvcDA2
+        NzAuaHRtIiB0YXJnZXQ9Il9wYXJlbnQiPio8L2E+PC9saT48bGk+PGEgbmFt
+        ZT0iMDA2Ij48L2E+PGEgaHJlZj0iMDAyMHQwMDYuaHRtIiB0YXJnZXQ9IlIi
+        PktsaW1lY2tpZWdvPC9hPiA8YSBocmVmPSIuLi9wL3AwMjk0Lmh0bSIgdGFy
+        Z2V0PSJfcGFyZW50Ij4qPC9hPjwvbGk+PGxpPjxhIG5hbWU9IjAwNyI+PC9h
+        PjxhIGhyZWY9IjAwMjB0MDA3Lmh0bSIgdGFyZ2V0PSJSIj5aYWKzb2NpZTwv
+        YT4gPGEgaHJlZj0iLi4vcC9wMDYxOS5odG0iIHRhcmdldD0iX3BhcmVudCI+
+        KjwvYT48L2xpPjxsaT48YSBuYW1lPSIwMDgiPjwvYT48YSBocmVmPSIwMDIw
+        dDAwOC5odG0iIHRhcmdldD0iUiI+Um9uZG8gR3J6ZWfzcnplY2tpZTwvYT4g
+        PGEgaHJlZj0iLi4vcC9wMDgwOS5odG0iIHRhcmdldD0iX3BhcmVudCI+Kjwv
+        YT48L2xpPjxsaT48YSBuYW1lPSIwMDkiPjwvYT48YSBocmVmPSIwMDIwdDAw
+        OS5odG0iIHRhcmdldD0iUiI+Um9uZG8gTW9naWxza2llPC9hPiA8YSBocmVm
+        PSIuLi9wL3AwODAyLmh0bSIgdGFyZ2V0PSJfcGFyZW50Ij4qPC9hPjwvbGk+
+        PGxpPjxhIG5hbWU9IjAxMCI+PC9hPjxhIGhyZWY9IjAwMjB0MDEwLmh0bSIg
+        dGFyZ2V0PSJSIj5MdWJpY3o8L2E+IDxhIGhyZWY9Ii4uL3AvcDA4NTEuaHRt
+        IiB0YXJnZXQ9Il9wYXJlbnQiPio8L2E+PC9saT48bGk+PGEgbmFtZT0iMDEx
+        Ij48L2E+PGEgaHJlZj0iMDAyMHQwMTEuaHRtIiB0YXJnZXQ9IlIiPkR3b3J6
+        ZWMgR7Pzd255PC9hPiA8YSBocmVmPSIuLi9wL3AwODAxLmh0bSIgdGFyZ2V0
+        PSJfcGFyZW50Ij4qPC9hPjwvbGk+PGxpPjxhIG5hbWU9IjAxMiI+PC9hPjxh
+        IGhyZWY9IjAwMjB0MDEyLmh0bSIgdGFyZ2V0PSJSIj5Qb2N6dGEgR7Pzd25h
+        PC9hPiA8YSBocmVmPSIuLi9wL3AwODA2Lmh0bSIgdGFyZ2V0PSJfcGFyZW50
+        Ij4qPC9hPjwvbGk+PGxpPjxhIG5hbWU9IjAxMyI+PC9hPjxhIGhyZWY9IjAw
+        MjB0MDEzLmh0bSIgdGFyZ2V0PSJSIj5QbGFjIFdzenlzdGtpY2ggpndp6nR5
+        Y2g8L2E+IDxhIGhyZWY9Ii4uL3AvcDA4MjEuaHRtIiB0YXJnZXQ9Il9wYXJl
+        bnQiPio8L2E+PC9saT48bGk+PGEgbmFtZT0iMDE0Ij48L2E+PGEgaHJlZj0i
+        MDAyMHQwMTQuaHRtIiB0YXJnZXQ9IlIiPkZpbGhhcm1vbmlhPC9hPiA8YSBo
+        cmVmPSIuLi9wL3AwODIyLmh0bSIgdGFyZ2V0PSJfcGFyZW50Ij4qPC9hPjwv
+        bGk+PGxpPjxhIG5hbWU9IjAxNSI+PC9hPjxhIGhyZWY9IjAwMjB0MDE1Lmh0
+        bSIgdGFyZ2V0PSJSIj5Vbml3ZXJzeXRldCBKYWdpZWxsb/Fza2k8L2E+IDxh
+        IGhyZWY9Ii4uL3AvcDA4MjQuaHRtIiB0YXJnZXQ9Il9wYXJlbnQiPio8L2E+
+        PC9saT48bGk+PGEgbmFtZT0iMDE2Ij48L2E+PGEgaHJlZj0iMDAyMHQwMTYu
+        aHRtIiB0YXJnZXQ9IlIiPkNyYWNvdmlhPC9hPiA8YSBocmVmPSIuLi9wL3Aw
+        ODI1Lmh0bSIgdGFyZ2V0PSJfcGFyZW50Ij4qPC9hPjwvbGk+PGxpPjxhIG5h
+        bWU9IjAxNyI+PC9hPjxhIGhyZWY9IjAwMjB0MDE3Lmh0bSIgdGFyZ2V0PSJS
+        Ij5PbGVhbmRyeTwvYT4gPGEgaHJlZj0iLi4vcC9wMDM0NS5odG0iIHRhcmdl
+        dD0iX3BhcmVudCI+KjwvYT48L2xpPjxsaT48YSBuYW1lPSIwMTgiPjwvYT48
+        YSBocmVmPSIwMDIwdDAxOC5odG0iIHRhcmdldD0iUiI+UGFyayBKb3JkYW5h
+        ICBOrzwvYT4gPGEgaHJlZj0iLi4vcC9wMDQ1My5odG0iIHRhcmdldD0iX3Bh
+        cmVudCI+KjwvYT48L2xpPjxsaT48YSBuYW1lPSIwMTkiPjwvYT48YSBocmVm
+        PSIwMDIwdDAxOS5odG0iIHRhcmdldD0iUiI+UmV5bWFuYSAgTq88L2E+IDxh
+        IGhyZWY9Ii4uL3AvcDAzNDYuaHRtIiB0YXJnZXQ9Il9wYXJlbnQiPio8L2E+
+        PC9saT48bGk+PGI+Q2ljaHkgS7FjaWs8L2I+PGJyLz48YnIvPihOrykgLSBu
+        YSC/sWRhbmllPC9saT48L3VsPjwvdGQ+PC90cj48dHIgYmdjb2xvcj0iIzNG
+        N0ZGRiI+PHRkIGNsYXNzPSJjZWxsbGluZSI+PGZvbnQgY2xhc3M9InRicGZv
+        bnQiIGNvbG9yPSIjRkZGRkZGIj48Yj5Jbm5lIGtpZXJ1bmtpOjwvYj48L2Zv
+        bnQ+PC90ZD48L3RyPjx0ciBiZ2NvbG9yPSIjRUZGN0ZGIj48dGQgY2xhc3M9
+        ImNlbGxyb3V0ZSI+PHVsPjxsaT48YSBocmVmPSIwMDIwcncwMi5odG0iIHRh
+        cmdldD0iX3BhcmVudCI+Q2ljaHkgS7FjaWsgLSBNYbN5IFCzYXN683c8L2E+
+        PC9saT48L3VsPjwvdGQ+PC90cj48L3RhYmxlPjwvYm9keT48L2h0bWw+
+    http_version: 
+  recorded_at: Mon, 09 Nov 2015 21:22:38 GMT
+recorded_with: VCR 3.0.0

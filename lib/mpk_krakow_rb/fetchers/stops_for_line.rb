@@ -1,9 +1,11 @@
 module MpkKrakowRb
   module Fetchers
     class StopsForLine
-      def initialize(number)
+      attr_reader :url
+      def initialize(number, direction)
         @number = number
-        @url = "http://rozklady.mpk.krakow.pl/aktualne/#{number_as_string}/#{number_as_string}w001.htm"
+        @direction = direction
+        @url = fetch_url
         @parser = /R\">(?:<b>)?([^<]+)/
       end
 
@@ -17,6 +19,10 @@ module MpkKrakowRb
       end
 
       private
+
+      def fetch_url
+        "http://rozklady.mpk.krakow.pl/aktualne/#{number_as_string}/#{number_as_string}w00#{@direction}.htm"
+      end
 
       def get_content
         Net::HTTP.get_response(URI(@url)).body.force_encoding("ISO-8859-2")
