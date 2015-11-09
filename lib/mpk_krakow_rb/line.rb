@@ -35,8 +35,6 @@ module MpkKrakowRb
          index += 1
         stops << {stop: stop, index: index}
       end
-
-      p stops
       stops
     end
   end
