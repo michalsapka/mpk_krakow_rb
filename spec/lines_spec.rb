@@ -4,6 +4,10 @@ describe MpkKrakowRb::Lines do
   let(:stops) { double("stop", get: true) }
   let(:lines) { MpkKrakowRb::Lines.new(stops_list: stops) }
 
+  before :each do
+    lines.get_lines
+  end
+
   it "returns elements" do
     expect(lines.count).not_to eq(0)
   end

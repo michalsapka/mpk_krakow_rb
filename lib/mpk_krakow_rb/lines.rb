@@ -1,12 +1,13 @@
 module MpkKrakowRb
   class Lines
     include Enumerable
+
     attr_accessor :stops_list
+
     def initialize(stops_list: nil)
       @lines = []
       @fetcher = MpkKrakowRb::Fetchers::Lines.new
       @stops_list = stops_list
-      get_lines
     end
 
     def get(line_number)
@@ -24,8 +25,6 @@ module MpkKrakowRb
     def inspect
       "#<MpkKrakowRb::Lines:#{object_id}>"
     end
-
-    private
 
     def get_lines
       data = @fetcher.fetch

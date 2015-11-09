@@ -15,5 +15,18 @@ require 'mpk_krakow_rb/fetchers/stops_for_line'
 
 
 module MpkKrakowRb
-  # Your code goes here...
+  class Com
+    attr_reader :stops, :lines
+
+    def initialize
+      @stops = Stops.new
+      @lines = Lines.new
+
+      @stops.lines_list = @lines
+      @lines.stops_list = @stops
+
+      @stops.get_stops
+      @lines.get_lines
+    end
+  end
 end

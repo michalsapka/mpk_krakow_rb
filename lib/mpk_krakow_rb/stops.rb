@@ -8,7 +8,6 @@ module MpkKrakowRb
       @fetcher = Fetchers::Stops.new
       @stops = []
       @lines_list = lines_list
-      get_stops
     end
 
     def inspect
@@ -23,7 +22,9 @@ module MpkKrakowRb
       end
     end
 
-    private
+    def get(stop_name)
+      @stops.detect{ |s| s.name == stop_name } or "Stop not found"
+    end
 
     def get_stops
       @fetcher.fetch.each do |stop|
