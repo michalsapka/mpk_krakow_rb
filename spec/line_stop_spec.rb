@@ -6,7 +6,11 @@ describe MpkKrakowRb::LineStop do
   end
 
  let(:stop) {  MpkKrakowRb::Stop.new(id: "0782", name: "Agatowa", lines_list: @lines) }
- let(:line_stop) { MpkKrakowRb::LineStop.new(stop: stop, line: 183, line_position: 1) }
+ let(:line_stop) { MpkKrakowRb::LineStop.new(id: 782,
+                                             name: "Agatowa",
+                                             lines_list: @lines,
+                                             line_number: 183,
+                                             line_position: 1) }
 
   it 'returns lines' do
     expect(line_stop.lines.count).not_to eq(0)
@@ -14,6 +18,11 @@ describe MpkKrakowRb::LineStop do
 
   it 'gets Line objects from lines' do
     expect(@lines).to receive(:get)
-    MpkKrakowRb::LineStop.new(stop: stop, line: 183, line_position: 1).lines
+    MpkKrakowRb::LineStop.new(id: 782,
+                              name: "Agatowa",
+                              lines_list: @lines,
+                              line_number: 183,
+                              line_position: 1).lines
+
   end
 end

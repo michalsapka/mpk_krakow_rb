@@ -3,9 +3,9 @@ module MpkKrakowRb
     attr_reader :name, :id, :lines_list
 
     def initialize(id:, name:, lines_list:)
-      @id = id
-      @name =name
-      @fetcher = Fetchers::LinesOnStop.new("http://rozklady.mpk.krakow.pl/aktualne/p/p#{id}.htm")
+      @id = id.to_i
+      @name = name
+      @fetcher = Fetchers::LinesOnStop.new(@id)
       @lines_list = lines_list
     end
 

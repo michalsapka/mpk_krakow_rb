@@ -1,8 +1,9 @@
 module MpkKrakowRb
   module Fetchers
     class LinesOnStop
-      def initialize(url)
-        @url = url
+      def initialize(id)
+        @id = id.to_s.rjust(4, "0")
+        @url = "http://rozklady.mpk.krakow.pl/aktualne/p/p#{@id}.htm"
         @pattern = /\/(\d+)\/\d/
       end
 

@@ -1,7 +1,7 @@
 require_relative "../spec_helper"
 
 describe MpkKrakowRb::Fetchers::LinesOnStop do
-  let(:lines) { MpkKrakowRb::Fetchers::LinesOnStop.new("http://rozklady.mpk.krakow.pl/aktualne/p/p0802.htm").fetch }
+  let(:lines) { MpkKrakowRb::Fetchers::LinesOnStop.new(802).fetch }
 
   it "returns an Array" do
     expect(lines.class).to eq(Array)

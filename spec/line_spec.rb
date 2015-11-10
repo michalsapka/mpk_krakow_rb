@@ -2,11 +2,9 @@ require 'spec_helper'
 
 describe MpkKrakowRb::Line do
   before :each do
-    @stops = double("stops",
-                    get: double("stop_list",
-                                id:1,
-                                name: "a stop",
-                                lines_list: "a list"))
+    @lines_list = double("line", get: true)
+    @stop = double("stop", name: "a stop", id: 1, lines_list: @lines_list)
+    @stops = double("stops", get: @stop)
   end
 
   it "gets stops" do
