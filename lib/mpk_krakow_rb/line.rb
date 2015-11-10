@@ -29,12 +29,16 @@ module MpkKrakowRb
       index = 0
       @fetcher_one.fetch.each do |stop|
         index += 1
-        stops << {stop: @stops_list.get(stop), index: index}
+        stops << LineStop.new(stop: @stops_list.get(stop),
+                              line_position: index,
+                              line: @number)
       end
 
       @fetcher_two.fetch.each do |stop|
          index += 1
-         stops << {stop: @stops_list.get(stop), index: index}
+         stops << LineStop.new(stop: @stops_list.get(stop),
+                              line_position: index,
+                              line: @number)
       end
       stops
     end

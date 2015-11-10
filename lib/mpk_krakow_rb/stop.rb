@@ -1,6 +1,6 @@
 module MpkKrakowRb
   class Stop
-    attr_reader :name
+    attr_reader :name, :id, :lines_list
 
     def initialize(id:, name:, lines_list:)
       @id = id
