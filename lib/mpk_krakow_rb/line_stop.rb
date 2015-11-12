@@ -5,6 +5,10 @@ module MpkKrakowRb
       @line_position = line_position
       super(id: id, name: name, lines_list: lines_list)
     end
+
+    def inspect
+      "#<MpkKrakowRb::LineStop:#{object_id} #{@name}>"
+    end
   end
 end
 
