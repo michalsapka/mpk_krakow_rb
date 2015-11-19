@@ -11,4 +11,3 @@ module MpkKrakowRb
     end
   end
 end
-

@@ -11,7 +11,7 @@ module MpkKrakowRb
     end
 
     def get(line_number)
-      @lines.detect{ |line| line.number == line_number } or "Line not found"
+      @lines.detect { |line| line.number == line_number } or 'Line not found'
     end
 
     def each

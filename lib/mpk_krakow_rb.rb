@@ -14,8 +14,8 @@ require 'mpk_krakow_rb/line'
 require 'mpk_krakow_rb/fetchers/lines'
 require 'mpk_krakow_rb/fetchers/stops_for_line'
 
-
 module MpkKrakowRb
+  # TODO: temporary name!
   class Com
     attr_reader :stops, :lines
 

@@ -38,13 +38,13 @@ module MpkKrakowRb
       end
 
       @fetcher_two.fetch.each do |stop|
-         index += 1
-         stop = @stops_list.get(stop)
-         stops << LineStop.new(id: stop.id,
-                               name: stop.name,
-                               line_number: @number,
-                               lines_list: stop.lines_list,
-                               line_position: index)
+        index += 1
+        stop = @stops_list.get(stop)
+        stops << LineStop.new(id: stop.id,
+                              name: stop.name,
+                              line_number: @number,
+                              lines_list: stop.lines_list,
+                              line_position: index)
       end
       stops
     end
